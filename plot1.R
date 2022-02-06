@@ -1,7 +1,7 @@
 library(graphics)
 
 df_csv <- read.csv("household_power_consumption.txt",sep = ";")
-df_csv <- df_csv[df_csv$Date == "2/1/2007" | df_csv$Date == "2/2/2007",]
+df_csv <- df_csv[df_csv$Date == "1/2/2007" | df_csv$Date == "2/2/2007",]
 df_csv[df_csv=="?"] <- NA
 df_csv[,3] <- as.numeric(df_csv[,3])
 x_axis_limits <- as.numeric(seq(0,6,by=2))
